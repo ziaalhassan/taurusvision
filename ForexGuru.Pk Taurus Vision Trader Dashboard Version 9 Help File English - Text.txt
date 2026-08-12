@@ -1,0 +1,1973 @@
+===============================================================================
+
+              F O R E X G U R U . P K   T A U R U S   V I S I O N
+                     T R A D E R   D A S H B O A R D
+
+                        C O M P L E T E   H E L P   F I L E
+
+                 Version 9.00  |  Standard Edition  |  August 2026
+                    MetaTrader 5  -  Expert Advisor (EA)
+
+                     Publisher : Digital Technologies Pakistan
+                     Websites  : ForexGuru.Pk  |  DigiTech.Com.Pk
+                     Developed By : DigiTech.Com.Pk Team
+                     Under Supervision Of : Dr. Zia-al-Hassan
+                     International Forex Trainer & Analyst
+
+===============================================================================
+
+
+-------------------------------------------------------------------------------
+                              T A B L E   O F   C O N T E N T S
+-------------------------------------------------------------------------------
+
+  SECTION 01 .... Product Identity
+  SECTION 02 .... What This Software Does, And What It Does Not Do
+  SECTION 03 .... System Requirements
+  SECTION 04 .... Installation, Step By Step
+  SECTION 05 .... First Run Checklist
+  SECTION 06 .... Anatomy Of The Screen
+  SECTION 07 .... How To Operate The Dashboard (Every Control Explained)
+  SECTION 08 .... TAB 1 - OVERVIEW
+  SECTION 09 .... TAB 2 - STATISTICS
+  SECTION 10 .... TAB 3 - ANALYTICS
+  SECTION 11 .... TAB 4 - HISTORY
+  SECTION 12 .... TAB 5 - ABOUT
+  SECTION 13 .... One Click Trade Closing, Explained In Full
+  SECTION 14 .... Complete Settings Reference (Every Input)
+  SECTION 15 .... Glossary - The Meaning And The Formula Of Every Number
+  SECTION 16 .... Honest Limits And Known Behaviour (Please Read)
+  SECTION 17 .... Troubleshooting
+  SECTION 18 .... Frequently Asked Questions
+  SECTION 19 .... Notes For Teachers And Study Groups
+  SECTION 20 .... Support And Contact
+  SECTION 21 .... Legal Notice And Risk Disclaimer
+  SECTION 22 .... What Is New In Version 9.00
+
+
+===============================================================================
+  SECTION 01  -  PRODUCT IDENTITY
+===============================================================================
+
+  Product Name .......... ForexGuru.Pk Taurus Vision Trader Dashboard
+  Brand Mark ............ Taurus Vision
+  Product Tag ........... Forex Traders Dashboard
+  Version ............... Version 9.00
+  Build ................. August 2026
+  Edition ............... Standard Edition
+  Platform .............. MetaTrader 5  -  Expert Advisor
+  Publisher ............. Digital Technologies Pakistan
+  Developed By .......... DigiTech.Com.Pk Team
+  Partners .............. ForexGuru.Pk
+  Supervision ........... Dr. Zia-al-Hassan
+                          International Forex Trainer & Analyst
+  Support ............... support@forexguru.pk
+                          support@digitech.com.pk
+  Phone ................. +92-300-6561240
+  Websites .............. ForexGuru.Pk  |  DigiTech.Com.Pk
+  Copyright ............. (c) 2026 Digital Technologies Pakistan
+
+  Taurus Vision is one member of the Taurus product family. Every product in
+  the family shares the same visual language, the same naming style and the
+  same support channel.
+
+  A note on naming. In this product the word "Version" is always written in
+  full. It is never shortened to "Ver" or "V". Please keep the same style when
+  you write about the product, take screenshots for students, or post results.
+
+
+===============================================================================
+  SECTION 02  -  WHAT THIS SOFTWARE DOES, AND WHAT IT DOES NOT DO
+===============================================================================
+
+  WHAT IT DOES
+  ------------
+
+  Taurus Vision reads the trading history and the live account state of the
+  MetaTrader 5 account that is currently logged in, and turns it into a full
+  screen analytics dashboard drawn directly on the chart. It gives you, in one
+  place, the kind of account report that traders normally have to upload to an
+  external website to see.
+
+  It answers questions such as:
+
+    -  How much has this account really grown, after deposits and withdrawals
+       are taken out of the picture?
+    -  What is the deepest fall this account has ever taken from its own peak?
+    -  Which currency pairs actually make the money, and which ones only make
+       the trade count look busy?
+    -  Are the long trades better than the short trades?
+    -  Which day of the week and which hour of the day are profitable, and
+       which ones quietly eat the account?
+    -  How long is a trade held on average, and does that differ between buy
+       and sell trades?
+    -  Is the win rate supported by the size of the wins, or is it a large
+       number of small wins hiding a few very large losses?
+
+  It also lets you close any open position from the dashboard itself, with a
+  deliberate two step confirmation so that nothing closes by accident.
+
+  WHAT IT DOES NOT DO
+  -------------------
+
+  Please read this list carefully and explain it to every student.
+
+    -  It is NOT a trading signal system. It never tells you to buy or sell.
+    -  It NEVER opens a trade. There is no entry logic inside this software.
+    -  It NEVER modifies a Stop Loss or a Take Profit.
+    -  It NEVER places a pending order.
+    -  It does NOT send your data anywhere. It has no internet connection,
+       no web request, no telemetry and no licence server. Everything it
+       shows is read from your own terminal, on your own computer.
+    -  It does NOT predict the future. Every number on the screen describes
+       what has already happened.
+
+  The ONLY trading action this software can perform is closing a position that
+  you have selected and confirmed twice on screen. Section 13 explains that
+  feature completely.
+
+
+===============================================================================
+  SECTION 03  -  SYSTEM REQUIREMENTS
+===============================================================================
+
+  Platform ............ MetaTrader 5 only. This software will not compile or
+                        run on MetaTrader 4.
+
+  Account ............. Any MetaTrader 5 account - demo, live, cent, hedging
+                        or netting. The dashboard reads whatever account is
+                        logged in at that moment.
+
+  Chart Size .......... The dashboard needs room to draw. If the chart window
+                        is smaller than about 560 pixels wide, or if the body
+                        area falls below about 140 pixels high, the dashboard
+                        replaces itself with the message:
+
+                          "Chart Window Too Small - Enlarge The Chart Or
+                           Lower Font Scale %"
+
+                        Maximise the chart window, or reduce the setting
+                        Master Font Size %, and the dashboard returns.
+
+  Font ................ The default font is "Segoe UI", which is present on
+                        every normal Windows installation. If that font is
+                        missing on your machine, set Font Name to "Arial".
+
+  AutoTrading ......... Required ONLY if you want to use the close buttons.
+                        Every chart and every number works perfectly with
+                        AutoTrading switched off; only the close buttons stop
+                        responding.
+
+  Files ............... None. Version 9.00 ships as a single file. There is no
+                        logo bitmap, no DLL, no configuration file and nothing
+                        to copy into the MQL5\Files folder.
+
+
+===============================================================================
+  SECTION 04  -  INSTALLATION, STEP BY STEP
+===============================================================================
+
+  Follow these steps exactly. They take about two minutes.
+
+  STEP 1  -  Open the data folder
+  --------------------------------
+  In MetaTrader 5, click on the menu:
+
+      File  >  Open Data Folder
+
+  A Windows folder opens. This is the private folder of your terminal. Inside
+  it you will see a folder called MQL5.
+
+  STEP 2  -  Place the file
+  -------------------------
+  Open:
+
+      MQL5  >  Experts
+
+  Copy the file
+
+      ForexGuru_Pk_Taurus_Vision_Trader_Dashboard.mq5
+
+  into that Experts folder.
+
+  IMPORTANT. It goes into "Experts", NOT into "Indicators". Version 9.00 is an
+  Expert Advisor. If you place it in the Indicators folder it will either fail
+  to appear or fail to close trades. Section 16 explains why this had to
+  change.
+
+  STEP 3  -  Compile
+  ------------------
+  Back in MetaTrader 5, press F4, or click:
+
+      Tools  >  MetaQuotes Language Editor
+
+  MetaEditor opens. In the Navigator on the left, open:
+
+      Experts  >  ForexGuru_Pk_Taurus_Vision_Trader_Dashboard.mq5
+
+  Press F7, or click the "Compile" button.
+
+  You should see, in the Errors tab at the bottom:
+
+      0 error(s), 0 warning(s)
+
+  A file with the extension .ex5 is now created beside the .mq5 file. That
+  .ex5 file is the program the terminal actually runs.
+
+  STEP 4  -  Refresh the Navigator
+  --------------------------------
+  Return to MetaTrader 5. In the Navigator window (Ctrl+N), right click on
+  "Expert Advisors" and choose "Refresh". The entry
+
+      ForexGuru_Pk_Taurus_Vision_Trader_Dashboard
+
+  now appears in the list.
+
+  STEP 5  -  Attach it to a chart
+  -------------------------------
+  Open any chart. The symbol and the timeframe do not matter at all - the
+  dashboard studies the whole ACCOUNT, not the chart it sits on. Many traders
+  keep one dedicated chart, for example EURUSD on the Daily timeframe, purely
+  as the dashboard chart.
+
+  Drag the Expert Advisor from the Navigator onto that chart. The settings
+  window opens.
+
+  STEP 6  -  Tick "Allow Algo Trading"
+  ------------------------------------
+  In the settings window, open the "Common" tab and tick:
+
+      [x] Allow Algo Trading
+
+  Do this even if you do not intend to use the close buttons. It costs
+  nothing, and it avoids a confusing error later.
+
+  STEP 7  -  Type your name, then press OK
+  ----------------------------------------
+  Open the "Inputs" tab. Find the very first field under the TRADER heading:
+
+      >>> TYPE YOUR FULL NAME HERE <<<
+
+  Replace the placeholder text "Enter Your Name Here" with your own full name.
+  Press OK.
+
+  STEP 8  -  Switch on AutoTrading
+  --------------------------------
+  On the main toolbar of the terminal, the "AutoTrading" button must be green.
+  If it is red, click it once.
+
+  Installation is complete. The dashboard fills the chart immediately.
+
+
+===============================================================================
+  SECTION 05  -  FIRST RUN CHECKLIST
+===============================================================================
+
+  Run through this list the first time you attach the dashboard.
+
+  [ ]  Did you type your name?
+       If the big heading at the top of the screen still shows the product
+       name, and a RED line underneath says
+
+           ">>> Open Expert Settings And Type Your Name In "Trader Name" <<<"
+
+       then the name has not been set. On the About tab, the row "Licensed To"
+       will also show, in red:
+
+           "Not Set  -  Type Your Name In Settings"
+
+       Press F7 on the chart (Expert Properties), open Inputs, type your name,
+       press OK. The heading changes to "Trading Dashboard Of <Your Name>" and
+       the red warning disappears.
+
+  [ ]  Is the AutoTrading button green?
+       If it is red and the close buttons are switched on, the Experts log
+       prints a plain reminder when the dashboard starts:
+
+           "Taurus Vision: AutoTrading is switched off. The close buttons
+            will stay inactive until you enable it in the terminal toolbar."
+
+  [ ]  Is the account history downloaded?
+       MetaTrader 5 only shows the deal history that the terminal has already
+       received from the broker. If the Account Growth panel says "Not Enough
+       History Data" on an account you know has traded, open the Toolbox
+       (Ctrl+T), go to the History tab, right click and choose "All History".
+       Once the terminal has the deals, the dashboard sees them within a few
+       seconds.
+
+  [ ]  Is the chart maximised?
+       The dashboard is designed for a full chart window. On a small window
+       it will still work, but panels shrink and rows are dropped to fit.
+
+  [ ]  Only ONE Expert Advisor per chart.
+       MetaTrader 5 allows only one Expert Advisor on a chart at a time. If
+       you already run a trading robot on a chart, put the dashboard on a
+       DIFFERENT chart. It does not need to share a chart with anything.
+
+
+===============================================================================
+  SECTION 06  -  ANATOMY OF THE SCREEN
+===============================================================================
+
+  From top to bottom, the dashboard is built from five fixed zones. The middle
+  zone changes with the tab you select; everything else stays where it is.
+
+  ZONE 1  -  THE HEADER
+  ---------------------
+  A dark gradient bar with a thin gold line under it. It carries three blocks:
+
+    LEFT     Broker company name
+             Server: <trade server name>
+             Leverage: 1:<leverage>  |  <account currency>
+
+    CENTRE   "Trading Dashboard Of <Your Name>"  in large gold letters
+             Underneath: the product name and the version.
+             Before you set your name, the centre shows the product name and
+             a red instruction line instead.
+
+    RIGHT    Account: <account login number>
+             Balance: <current balance>
+             Equity:  <current equity>
+
+  The centre title carries no brackets around the trader name. That is
+  deliberate and part of the brand style.
+
+  ZONE 2  -  THE TOOLBAR
+  ----------------------
+  A single row of controls under the header.
+
+    LEFT     Five tab chips:  Overview | Statistics | Analytics | History |
+             About. The active tab is filled with gold.
+
+    RIGHT    The theme switch, showing a drawn moon and the word "Dark", or a
+             drawn sun and the word "Light".
+             The chips "Expand All" and "Collapse All".
+             A quiet text line: "Updated hh:mm:ss".
+
+    The sun and the moon are drawn with shapes, not with a font character.
+    That is intentional: a symbol font may be missing on a student computer,
+    and a missing font character would render as an empty box.
+
+    When the chart is narrow, the toolbar drops controls from the right hand
+    side rather than overlapping them. The tabs are never dropped.
+
+  ZONE 3  -  THE KPI RIBBON
+  -------------------------
+  A row of up to seven cards giving the headline numbers of the account. Each
+  card has a small coloured stripe on its left edge, a label, a large value
+  and a small note in the bottom right corner.
+
+    1. GAIN (TIME WEIGHTED)   note: absolute gain
+    2. BALANCE                note: peak balance ever reached
+    3. EQUITY                 note: account leverage
+    4. FLOATING P/L           note: number of open positions
+    5. CLOSED PROFIT          note: number of closed trades
+    6. MAX DRAWDOWN           note: the same drawdown in money
+    7. WIN RATE               note: profit factor
+
+  If the chart is too narrow to give every card a readable width, the ribbon
+  drops cards from the right, down to a minimum of three. It never squeezes
+  seven unreadable cards into the space.
+
+  The ribbon can be switched off entirely with the setting Show Top KPI
+  Ribbon. It is also hidden automatically on the About tab, because the About
+  tab is a product page and not an account report.
+
+  ZONE 4  -  THE PANEL BODY
+  -------------------------
+  This is the working area. Its contents change with the selected tab. Every
+  item in it is a "panel": a rounded rectangle with a title bar, an optional
+  note on the right hand side of the title bar, and a body.
+
+  The layout engine gives each row of panels the height it asks for. When
+  there is spare height it hands the surplus to the panels that gain the most
+  from being taller - a chart gains, a six row table does not. When there is
+  not enough height it takes the height back from the panels that survive it
+  best, and only then squeezes everything proportionally.
+
+  This is why the dashboard looks correct on a small laptop screen and on a
+  large monitor without any manual adjustment.
+
+  ZONE 5  -  THE FOOTER
+  ---------------------
+  A dark gradient bar with a gold line above it:
+
+    LEFT     Your name  |  account currency  |  account number
+    CENTRE   Version  |  phone number  |  support email
+    RIGHT    "Powered By ForexGuru.Pk"
+
+  The footer is designed to survive a screenshot. When a student sends you a
+  picture of the dashboard, the footer already tells you whose account it is,
+  in which currency, and on which account number.
+
+
+===============================================================================
+  SECTION 07  -  HOW TO OPERATE THE DASHBOARD (EVERY CONTROL EXPLAINED)
+===============================================================================
+
+  Everything in the dashboard is operated with a single LEFT mouse click on
+  the chart. There is no right click menu, no keyboard shortcut and no drag
+  operation.
+
+  7.1  SWITCHING TABS
+  -------------------
+  Click one of the five chips on the left of the toolbar. The panel body is
+  replaced immediately. The tab you were on is remembered only for as long as
+  the dashboard runs; when it is restarted it returns to the tab named in the
+  setting "Opening Tab".
+
+  7.2  COLLAPSING AND EXPANDING A PANEL
+  -------------------------------------
+  Click anywhere on the TITLE BAR of a panel. The panel folds up to just its
+  title bar, and the panels around it take the freed space. Click the title
+  bar again to expand it.
+
+  This is the fastest way to give one chart the whole screen. For example, on
+  the Overview tab, collapse "Account Summary" and "Current Active Trades",
+  and the Account Growth chart expands to almost the full window - perfect for
+  a screenshot in class.
+
+  7.3  EXPAND ALL / COLLAPSE ALL
+  ------------------------------
+  These two chips in the toolbar act on every panel in the whole product at
+  once, on all five tabs, not only on the tab you are looking at. Use them to
+  reset the layout after experimenting.
+
+  7.4  THE THEME SWITCH
+  ---------------------
+  Click the chip showing the moon or the sun.
+
+    Dark  (Luxury Gold)      - gold on near black. The normal working theme.
+    Light (Print/Screenshot) - dark ink on white. Made for printing, for
+                               projecting on a classroom screen, and for
+                               screenshots that will be pasted into a white
+                               document or a PDF.
+
+  The glyph shown is the theme that is currently live: a moon for Dark, a sun
+  for Light.
+
+  Changing the theme also re-applies the chart background colour, so the chart
+  behind the dashboard matches instantly.
+
+  7.5  THE SHARED PAGER
+  ---------------------
+  Six tables in this product can hold more rows than fit on the screen:
+
+      -  Current Active Trades
+      -  Closed Trade History
+      -  Deposits & Withdrawals
+      -  Reward : Risk By Symbol
+      -  Average Holding Time
+      -  Currency Popularity
+
+  All six use the SAME pager control, on the right hand side of the panel
+  title bar:
+
+      <     Page 2 / 5   -   137 Closed     >
+
+  Click ">" for the next page and "<" for the previous page.
+
+  Two behaviours are worth teaching:
+
+    (a) Both arrows WRAP. From the last page, ">" returns to page 1. From
+        page 1, "<" jumps to the last page.
+
+    (b) On a narrow panel there may be no room to draw the "<" arrow. The
+        ">" arrow is always drawn. Because ">" wraps, you can always reach
+        every page and get back to the start, even when the back arrow is
+        not visible.
+
+  The pager also shows a note when there is only ONE page - for example
+  "3 Open Positions" or "Net $2,500.00". In that case no arrows are drawn,
+  because there is nowhere to go.
+
+  Each table remembers its own page independently. Moving to page 3 of the
+  Closed Trade History does not disturb the Reward : Risk table.
+
+  7.6  IN-PANEL TAB STRIPS
+  ------------------------
+  Two panels carry a small strip of chips inside their body:
+
+    Account Growth ....... Growth % | Balance | Profit | Drawdown
+    Currency Popularity .. By Symbol | By Strategy
+
+  Click a chip to change what the panel displays. The active chip is filled
+  with gold.
+
+  7.7  THE YEAR STRIP
+  -------------------
+  The "Monthly Gain (Change)" panel carries one chip per year in which the
+  account traded. Click a year to study that year. The dashboard opens on the
+  NEWEST year by default.
+
+  7.8  THE CLOSE BUTTONS
+  ----------------------
+  A small red "X" appears at the right hand end of each row in the Current
+  Active Trades table. This is the only control in the product that can change
+  your account. It is explained fully in Section 13.
+
+  7.9  HOW OFTEN THE SCREEN UPDATES
+  ---------------------------------
+  Three separate clocks keep the dashboard alive:
+
+    -  A one second timer redraws the screen once per second, so the numbers
+       keep moving even on a quiet market with no incoming ticks.
+    -  Incoming price ticks trigger a redraw, but no more often than about
+       four times per second, so a fast market cannot flood the terminal.
+    -  The full history recalculation - the expensive part - runs only every
+       few seconds, controlled by the setting "History Recalculation Interval
+       (Sec)", default 5.
+
+  When you open or close a trade, the terminal tells the dashboard, and the
+  history is rebuilt on the next timer beat, about one second later. The
+  rebuild is deliberately NOT done inside the trade notification itself,
+  because that would block the terminal's trading pipeline and freeze the
+  platform for a moment on every order.
+
+  7.10  A CLICK GUARD YOU MAY NOTICE
+  ----------------------------------
+  Two clicks on the SAME control inside 300 milliseconds are treated as one.
+  This stops an accidental double click from flipping the theme twice or
+  skipping two pages at once. If you want to move two pages, click, wait a
+  moment, then click again.
+
+
+===============================================================================
+  SECTION 08  -  TAB 1  -  OVERVIEW
+===============================================================================
+
+  The daily working view. Three panels: what the account is, how it grew, and
+  what is open right now.
+
+  ---------------------------------------------------------------------------
+  8.1  PANEL: ACCOUNT SUMMARY
+  ---------------------------------------------------------------------------
+  Title bar note: the date of the first record found in the account history.
+
+  Twelve values in two columns.
+
+    LEFT COLUMN
+
+    Abs. Gain ......... Absolute gain. Total closed profit divided by total
+                        deposits, as a percentage. This answers: "For every
+                        100 rupees or dollars I put in, how much has trading
+                        added?"
+
+    Daily ............. The average COMPOUNDED daily return implied by the
+                        whole growth of the account, spread evenly over the
+                        number of days between the first and the last record.
+                        It is not the return of today.
+
+    Monthly ........... The same figure compounded over thirty days.
+
+    Deposits .......... Sum of every deposit found in the history.
+
+    Withdrawals ....... Sum of every withdrawal, shown as a positive number.
+
+    Interest/Swap ..... Total swap paid or received across all closed trades.
+                        Green when the account received swap overall, red when
+                        it paid.
+
+    RIGHT COLUMN
+
+    Highest Bal. ...... The highest balance the account has ever reached.
+
+    Max Drawdown ...... The deepest fall, in percent, from a peak balance to
+                        the lowest point after that peak.
+
+    Closed Profit ..... Net profit of all closed trading, including commission
+                        and swap. It excludes deposits and withdrawals.
+
+    Free Margin ....... Live value from the terminal.
+
+    Used Margin ....... Live value from the terminal.
+
+    Margin Level ...... Live value from the terminal, as a percentage. Shows
+                        a dash when no position is open, because the figure is
+                        undefined with zero used margin.
+
+  ---------------------------------------------------------------------------
+  8.2  PANEL: ACCOUNT GROWTH
+  ---------------------------------------------------------------------------
+  Title bar note: the date of the first point and the date of the last point.
+
+  The main chart of the product. A tab strip inside the panel selects one of
+  four views of the same account.
+
+    GROWTH %      Time weighted growth. This is the fair way to measure a
+                  trading account that has received deposits and paid out
+                  withdrawals. A deposit of one lakh does not make the line
+                  jump upward, because a deposit is not a trading result.
+                  Only trading moves this line.
+
+                  In this view only, a second, quieter grey line is drawn on
+                  top: the raw BALANCE. Comparing the two lines is one of the
+                  most useful teaching pictures in the whole dashboard. When
+                  the grey balance line rises but the gold growth line is
+                  flat, the account is growing by deposits, not by trading.
+
+    BALANCE       The raw account balance after every deal.
+
+    PROFIT        Cumulative trading profit in money, starting from zero.
+
+    DRAWDOWN      The drawdown percentage at each point, drawn downward from
+                  zero, in red. This shows not only how deep the falls were,
+                  but how LONG the account stayed under water.
+
+  On every view:
+
+    -  A green dot on the bottom axis marks a DEPOSIT.
+    -  A red dot on the bottom axis marks a WITHDRAWAL.
+    -  Five horizontal grid lines carry the value axis on the left.
+    -  The zero line, when it is inside the visible range, is drawn slightly
+       brighter than the grid.
+    -  The first and last dates are printed under the two ends of the chart.
+    -  A legend under the chart names every line and dot that is in use.
+
+  If fewer than two history points exist, the panel prints:
+  "Not Enough History Data".
+
+  ---------------------------------------------------------------------------
+  8.3  PANEL: CURRENT ACTIVE TRADES
+  ---------------------------------------------------------------------------
+  Title bar note: pager, or the count of open positions.
+
+  Live positions, refreshed continuously. Columns:
+
+    SYMBOL ........ The instrument.
+    TYPE .......... BUY in green, SELL in red.
+    VOLUME ........ Lots.
+    OPEN .......... Open price, at the instrument's own digit count.
+    CURRENT ....... Current price.
+    PIPS / MOVE ... For a Forex pair, the move in pips, in the direction of
+                    the trade, to one decimal. For a non-Forex instrument such
+                    as gold, an index or a crypto pair, the RAW PRICE MOVE to
+                    two decimals, because "pips" has no agreed meaning on
+                    those instruments. Section 16 explains this fully.
+    SWAP .......... Swap accumulated on that position so far.
+    PROFIT ........ The floating profit of the position, WITHOUT swap. Swap
+                    is shown in its own column beside it.
+    CLOSE ......... The two step close button, if it is switched on.
+
+  The TOTAL line at the foot of the panel shows the total volume of all open
+  positions and the total floating result. Note carefully: this total INCLUDES
+  swap, while the PROFIT column of each row EXCLUDES it. The two figures will
+  therefore differ by exactly the sum of the SWAP column. This is intentional
+  - the row shows you the market result, the total shows you the true cash
+  position.
+
+  Beside the total line, a status line appears when something needs saying:
+  the close confirmation prompt with its countdown, or the result of the last
+  close attempt. Result messages disappear on their own after eight seconds.
+
+  When there is nothing open, the panel prints "No Open Trades".
+
+
+===============================================================================
+  SECTION 09  -  TAB 2  -  STATISTICS
+===============================================================================
+
+  The report card of the account. Three panels.
+
+  ---------------------------------------------------------------------------
+  9.1  PANEL: TRADE STATISTICS
+  ---------------------------------------------------------------------------
+  Title bar note: the number of closed trades. If the account has traded any
+  non-Forex instrument, the note adds, for example:
+
+      "184 Closed Trades   |   17 Non-FX (Excluded From Pips)"
+
+  That second half is a deliberate honesty note. It tells you exactly how many
+  trades were left out of every pip figure on the screen.
+
+  Eighteen values in three columns of six rows.
+
+    COLUMN 1
+
+    Trades ............ Number of fully closed trades.
+    Profitability ..... A green and red bar, with the win rate printed to its
+                        left. The green part is the share of winning trades.
+    Won / Lost ........ Counts of winners and losers.
+    Pips (FX) ......... Total pips across Forex trades only. Shows "n/a" when
+                        the account has never traded a Forex pair.
+    Lots .............. Total volume opened.
+    Commissions ....... Total commission paid.
+
+    COLUMN 2
+
+    Average Win ....... Average pips and average money of a winning trade.
+    Average Loss ...... Average pips and average money of a losing trade.
+    Longs Won ......... (winners / total longs) and the percentage.
+    Shorts Won ........ (winners / total shorts) and the percentage.
+    Profit Factor ..... Gross profit divided by gross loss. Green at 1.00 or
+                        above, red below.
+    Expectancy ........ Net profit divided by the number of closed trades. In
+                        plain words: what one average trade is worth to this
+                        account, in money.
+
+    COLUMN 3
+
+    Best Trade ........ Date and money of the single largest winner.
+    Worst Trade ....... Date and money of the single largest loser.
+    Best (Pips) ....... Date and pips of the largest Forex winner.
+    Worst (Pips) ...... Date and pips of the largest Forex loser.
+    Avg. Trade Length . Average time a trade was held.
+    Total Swap ........ Total swap over all closed trades.
+
+  Teaching note. Profit Factor and Win Rate should always be read together.
+  A win rate of 80% with a profit factor of 0.8 means the account wins often
+  and loses badly - the classic profile of an account that will eventually be
+  wiped out by one trade. A win rate of 35% with a profit factor of 2.1 is a
+  healthy trend following account.
+
+  ---------------------------------------------------------------------------
+  9.2  PANEL: MONTHLY GAIN (CHANGE)
+  ---------------------------------------------------------------------------
+  Title bar note: the total for the selected year, in percent and in money.
+
+  A vertical bar for each month of the selected year. Green above the zero
+  line, red below it. The percentage is printed at the tip of each bar and the
+  month name under the axis.
+
+  Each month's percentage is that month's trading profit divided by the
+  account balance at the START of that month. This is the standard monthly
+  gain used by public trading statistics sites, and it is the reason a month
+  that made the same money as another month can show a different percentage -
+  the account was a different size at the time.
+
+  Click a year on the strip of year chips at the top of the panel to move
+  between years. If the account has no monthly data at all, the panel prints
+  "No Monthly Data".
+
+  ---------------------------------------------------------------------------
+  9.3  PANEL: CURRENCY POPULARITY
+  ---------------------------------------------------------------------------
+  A donut chart on the left, a paged table on the right.
+
+  The donut divides the account by TRADE COUNT, not by profit. The number in
+  the centre is the total number of closed trades. Each slice has its own
+  colour, and the same colour is repeated as a small square beside the name in
+  the table, so the eye can match them.
+
+  The table has four columns:
+
+    SYMBOL / STRATEGY .. The instrument name, or the strategy name.
+    SHARE .............. That entry's share of the trade count, in percent.
+    NET ................ Net money made or lost on that entry.
+    R:R ................ Average win divided by average loss for that entry.
+                         Green at 1.00 or above, red below. See below for the
+                         two special cases.
+
+  The tab strip at the top of the panel switches the whole panel between two
+  ways of grouping the same trades:
+
+    BY SYMBOL     Grouped by instrument - EURUSD, XAUUSD, and so on.
+
+    BY STRATEGY   Grouped by the magic number carried by the trade. Every
+                  Expert Advisor stamps its trades with a magic number.
+                  Trades placed by hand carry no magic number, and they are
+                  collected under the name "Manual". Other groups appear as
+                  "Magic 12345".
+
+  The BY STRATEGY view is the fastest way to answer a very practical question:
+  is this account making money from the robot, or from the manual trades?
+
+  Two special values can appear in the R:R column:
+
+    "-"        Nothing measurable yet on that entry.
+    "No Loss"  There are winning trades but not one losing trade yet on that
+               entry, so an average loss does not exist and no ratio can be
+               calculated. It is shown in green with an honest label rather
+               than as a dash, which would have looked like a failure.
+
+  The rows are sorted by trade count, highest first, and the table is paged
+  like every other long table.
+
+
+===============================================================================
+  SECTION 10  -  TAB 3  -  ANALYTICS
+===============================================================================
+
+  The diagnostic tab. Four panels that look for patterns and habits rather
+  than totals.
+
+  ---------------------------------------------------------------------------
+  10.1  PANEL: REWARD : RISK BY SYMBOL
+  ---------------------------------------------------------------------------
+  A horizontal bar for each instrument, showing the average winning trade
+  divided by the average losing trade on that instrument.
+
+  Read it as: "when this pair pays me, it pays me X times what it takes from
+  me when it does not."
+
+  A thin vertical reference line is drawn at the ratio 1.0 and labelled. Bars
+  that reach past that line are green; bars short of it are red. The numeric
+  value is printed at the right hand end of each row.
+
+  Three states are possible, and all three are labelled honestly:
+
+    A real ratio ..... The bar length is proportional to the ratio.
+
+    "No Loss" ........ Wins exist, but no losing trade has ever been taken on
+                       that instrument. There is no average loss to divide by.
+                       The bar runs the full width in green and carries the
+                       words "NO LOSING TRADE YET". This is common on a young
+                       account and it does NOT mean the ratio is zero.
+
+    "-" .............. Nothing measurable at all yet.
+
+  The instruments with no loss yet are sorted to the top, then the real ratios
+  from high to low, then the blanks. The list is paged.
+
+  IMPORTANT for teaching. This is a HISTORICAL reward to risk ratio, computed
+  from what actually happened. It is NOT the planned risk to reward of your
+  trade setup. A student who plans 1:3 on every entry may still see 0.8 here,
+  and that gap - between the plan and the result - is exactly the lesson.
+
+  ---------------------------------------------------------------------------
+  10.2  PANEL: AVERAGE HOLDING TIME
+  ---------------------------------------------------------------------------
+  Title bar note: pager, plus "Avg. All:" and the average holding time over
+  every closed trade in the account.
+
+  For each instrument, two stacked bars:
+
+    GREEN (upper) .... Average time a LONG trade was held on that instrument.
+    RED   (lower) .... Average time a SHORT trade was held.
+
+  A legend at the bottom of the panel names the two colours. The duration
+  printed on the right of each row is the LONGER of the two averages, so the
+  right hand column can be scanned as "the slowest side of this instrument".
+
+  When an instrument has only ever been traded in one direction, a single full
+  height bar is drawn in that direction's colour, instead of a half height bar
+  with an empty slot beneath it.
+
+  Durations are written in a compact form: "2d 4h", "6h 30m", "45m". A dash
+  means no measurable duration.
+
+  Teaching note. A large gap between the green and the red bar is a real and
+  very common bias. Traders often let losers run in one direction and cut them
+  quickly in the other, usually because they are trading against a trend they
+  believe in. This panel makes that habit visible in a way a trade list never
+  does.
+
+  ---------------------------------------------------------------------------
+  10.3  PANEL: NET P/L BY DAY OF WEEK
+  ---------------------------------------------------------------------------
+  Title bar note: the best day and what it earned.
+
+  Seven bars, Sunday through Saturday, each showing the NET money made or lost
+  by trades CLOSED on that weekday. Bars are green above the zero line and red
+  below it. The small number at the tip of each bar is the number of trades
+  that closed on that day. A grey flat bar means no trades were closed on that
+  weekday at all.
+
+  ---------------------------------------------------------------------------
+  10.4  PANEL: NET P/L BY HOUR OF DAY
+  ---------------------------------------------------------------------------
+  Title bar note: the best hour and what it earned, followed by the words
+  "(Server Time)".
+
+  The same chart across twenty four hours, labelled 00 to 23. On a narrow
+  panel only every third hour is labelled, and the trade counts above the bars
+  are hidden, so the labels never collide.
+
+  READ THE TIME ZONE WARNING. These hours are BROKER SERVER hours, not your
+  local Pakistan time. Most brokers run a server two or three hours ahead of
+  or behind local time. Before you draw a conclusion such as "I trade badly
+  in the London session", check your broker's server offset. The offset is
+  visible in the Market Watch window of the terminal.
+
+
+===============================================================================
+  SECTION 11  -  TAB 4  -  HISTORY
+===============================================================================
+
+  The record tab. Everything here is a plain, auditable list.
+
+  ---------------------------------------------------------------------------
+  11.1  PANEL: CLOSED TRADE HISTORY
+  ---------------------------------------------------------------------------
+  Title bar note: pager, plus the count of closed trades.
+
+  Every closed trade, NEWEST FIRST. Ten columns:
+
+    SYMBOL ...... Instrument.
+    TYPE ........ BUY (green) or SELL (red), the direction of the entry.
+    LOTS ........ Volume opened.
+    OPENED ...... Date and time of entry, as "Mon DD  HH:MM".
+    CLOSED ...... Date and time of exit.
+    HELD ........ How long the position was held.
+    IN .......... Entry price. When a position was built from several entries,
+                  this is the VOLUME WEIGHTED AVERAGE entry price.
+    OUT ......... Exit price. When a position was closed in several parts,
+                  this is the volume weighted average exit price.
+    PIPS ........ Pips for a Forex pair, raw price move for anything else.
+    NET P/L ..... The result of the trade in money, INCLUDING commission and
+                  swap. This is the true cash effect of the trade.
+
+  This table is the place to send a student who disputes a number elsewhere in
+  the dashboard. Every aggregate in the product is built from these rows.
+
+  ---------------------------------------------------------------------------
+  11.2  PANEL: DEPOSITS & WITHDRAWALS
+  ---------------------------------------------------------------------------
+  Title bar note: pager, plus "Net" and the net of all funding.
+
+  Every balance operation on the account, NEWEST FIRST:
+
+    DATE .............. Date of the operation.
+    TYPE .............. DEPOSIT in green, WITHDRAWAL in red.
+    AMOUNT ............ The amount, signed.
+    BALANCE AFTER ..... The account balance immediately after the operation.
+
+  When the account has no funding records at all - which is normal on a demo
+  account created with a starting balance - the panel prints "No Funding
+  Records".
+
+  ---------------------------------------------------------------------------
+  11.3  PANEL: RISK METRICS & RECORDS
+  ---------------------------------------------------------------------------
+  Title bar note: the number of ACTIVE DAYS, meaning days on which the account
+  produced a non zero trading result.
+
+  Eighteen values in three columns. These are the professional grade measures.
+  Every formula is given in Section 15.
+
+    COLUMN 1  -  QUALITY OF RETURN
+
+    Sharpe (Ann.) ...... Return per unit of total volatility, annualised.
+    Sortino (Ann.) ..... Return per unit of DOWNSIDE volatility, annualised.
+    Z-Score ............ Whether wins and losses cluster in streaks, or fall
+                         randomly.
+    Recovery Factor .... Net profit divided by the deepest money drawdown.
+    Profit Factor ...... Gross profit divided by gross loss.
+    Expectancy ......... Money value of one average trade.
+
+    COLUMN 2  -  DAMAGE AND DURATION
+
+    Max Drawdown ....... Deepest fall from a peak, in percent.
+    Max DD (Money) ..... The same fall, in money.
+    Best Day ........... Date and money of the best trading day.
+    Worst Day .......... Date and money of the worst trading day.
+    Longest Trade ...... The longest a single position was ever held.
+    Avg. Trade ......... The average holding time.
+
+    COLUMN 3  -  BEHAVIOUR AND ACTIVITY
+
+    Max Cons. Wins ..... The longest unbroken run of winning trades.
+    Max Cons. Losses ... The longest unbroken run of losing trades.
+    Best Win Run ....... The money made in the best winning run.
+    Worst Loss Run ..... The money lost in the worst losing run.
+    Trades / Week ...... Average trade frequency per week.
+    Trades / Month ..... Average trade frequency per month.
+
+  Teaching note on Max Cons. Losses. This single number is the most useful
+  risk figure most students will ever meet. If the account has already seen
+  nine losses in a row, then a risk of 5% per trade would have destroyed 37%
+  of the account in one ordinary losing run. Ask every student to compare this
+  number against their own position sizing.
+
+
+===============================================================================
+  SECTION 12  -  TAB 5  -  ABOUT
+===============================================================================
+
+  A product page rather than an account report. The KPI ribbon is hidden here
+  on purpose. Three panels.
+
+  ---------------------------------------------------------------------------
+  12.1  PANEL: ABOUT THIS SOFTWARE
+  ---------------------------------------------------------------------------
+  A wordmark block at the top - the brand mark "Taurus Vision", the product
+  tag "Forex Traders Dashboard", and the version with the edition - followed
+  by eight fact rows:
+
+    Product .......... ForexGuru.Pk Taurus Vision Trader Dashboard
+    Version .......... Version 9.00  (August 2026)
+    Platform ......... MetaTrader 5  -  Expert Advisor
+    Publisher ........ Digital Technologies Pakistan
+    Developed By ..... DigiTech.Com.Pk Team
+    Partners ......... ForexGuru.Pk
+    Supervision ...... Dr. Zia-al-Hassan  -  International Forex Trainer
+                       & Analyst
+    Licensed To ...... Your name, in green, once you have entered it. Until
+                       then it shows, in red: "Not Set - Type Your Name In
+                       Settings".
+
+  ---------------------------------------------------------------------------
+  12.2  PANEL: HOW TO USE THIS DASHBOARD
+  ---------------------------------------------------------------------------
+  A nine step quick start card built into the software itself, so that a
+  student who has lost this help file still has the essentials on screen:
+
+    1.  Open Expert Properties and type your full name in "Trader Name".
+    2.  Use the tab bar to move between Overview, Statistics, Analytics,
+        History and About.
+    3.  Click any panel title to collapse or expand that panel.
+    4.  Use Expand All or Collapse All to reset the whole layout in one click.
+    5.  Switch theme between Dark and Light before taking screenshots for
+        students.
+    6.  On the Growth panel choose Growth, Balance, Profit or Drawdown.
+    7.  On the Monthly panel use the year strip to select a trading year.
+    8.  Set History Days in settings to limit the study to a recent period.
+    9.  On Current Active Trades click X then OK within the confirm window to
+        close that trade.
+
+  Step 9 shows your own configured confirm window in seconds, not a fixed
+  number, so it stays correct if you change the setting.
+
+  ---------------------------------------------------------------------------
+  12.3  PANEL: SUPPORT, CREDITS AND NOTICE
+  ---------------------------------------------------------------------------
+  Three columns:
+
+    PUBLISHER ..... Company name, both websites, phone number.
+    SUPPORT ....... Both support email addresses, and the two things you must
+                    include in any support message: your account number, and
+                    a screenshot of the chart.
+    SUPERVISION ... Supervisor, title, development credit, version and build.
+
+  A single notice line runs across the bottom of the panel:
+
+    "This Dashboard Reads Your Own Account History. It Never Opens Or Modifies
+     A Trade. A Position Closes Only After You Confirm It Twice On Screen.
+     Past Results Do Not Guarantee Future Results.
+     (c) 2026 Digital Technologies Pakistan"
+
+
+===============================================================================
+  SECTION 13  -  ONE CLICK TRADE CLOSING, EXPLAINED IN FULL
+===============================================================================
+
+  This is the only feature in the product that can change your money. Read
+  this section completely before you use it, and make sure every student has
+  read it too.
+
+  13.1  WHERE IT IS
+  -----------------
+  Overview tab  >  Current Active Trades  >  the CLOSE column on the far right
+  of each row.
+
+  13.2  HOW TO CLOSE A POSITION
+  -----------------------------
+  It is deliberately a TWO STEP action.
+
+    STEP 1.  Click the red "X" on the row of the position you want to close.
+
+             The button changes to "OK" and turns into a filled red chip. A
+             status line appears at the foot of the panel:
+
+                 "Click OK Again To Close Ticket 123456789   (6s)"
+
+             The number in brackets counts down every second.
+
+    STEP 2.  Click "OK" before the countdown reaches zero.
+
+             The position is closed at market. The status line is replaced by
+             the result, for example:
+
+                 "Closed EURUSD  Ticket 123456789"
+
+  If you do NOT click the second time, the arming expires on its own and the
+  button returns to a plain "X". Nothing is closed. A forgotten first click
+  cannot sit waiting to fire later.
+
+  You can also cancel deliberately: click the "X" of a DIFFERENT row, or
+  switch the theme. Either action clears the armed ticket.
+
+  13.3  WHY TWO STEPS
+  -------------------
+  The dashboard covers the whole chart. A single stray click, a slipping
+  mouse, or a student demonstrating something on a live account could
+  otherwise close a real position instantly and irreversibly. One click arms;
+  a second, conscious click executes. Nothing closes by accident.
+
+  13.4  THE COUNTDOWN CLOCK
+  -------------------------
+  The countdown uses the computer's own millisecond clock, not the broker's
+  server time. This matters: server time only advances when a price tick
+  arrives, so on a quiet symbol or over a weekend the countdown would have
+  frozen and an armed ticket would never have expired. The computer clock
+  keeps running whether or not the market does.
+
+  13.5  SETTINGS THAT CONTROL IT
+  ------------------------------
+    Show One Click Close Button On Open Trades .... default true
+        Set this to false and the CLOSE column disappears completely. The
+        dashboard becomes strictly read only. This is the recommended setting
+        for a shared classroom terminal or a student demonstration account.
+
+    Confirm Window Seconds (Click X Twice) ........ default 6
+        How long the armed state lasts. Whatever you type, the working value
+        is forced into the range 2 to 60 seconds. A value of zero would have
+        thrown away the entire safety guard, so it is not permitted.
+
+    Maximum Slippage In Points .................... default 30
+        The maximum price movement, in points, that you accept between your
+        click and the fill. If the market moves further than this in that
+        instant, the broker rejects the close and the dashboard reports the
+        rejection rather than filling you at a worse price.
+
+  13.6  MESSAGES YOU MAY SEE, AND WHAT THEY MEAN
+  ----------------------------------------------
+  Every message appears on the status line at the foot of the Current Active
+  Trades panel and clears itself after about eight seconds.
+
+    "AutoTrading Is Switched Off In The Terminal Toolbar"
+        The AutoTrading button on the main toolbar is red. Click it once.
+
+    "Allow Algo Trading Is Not Ticked In The Dashboard Settings"
+        Press F7 on the chart, open the Common tab, tick "Allow Algo Trading",
+        press OK.
+
+    "This Account Does Not Allow Expert Advisor Trading"
+        The BROKER has disabled Expert Advisor trading on this account. No
+        setting on your side can override this. Contact your broker. Some
+        investor password logins and some contest accounts are like this.
+
+    "Position Was Already Closed"
+        Between your first and your second click, the position closed by
+        itself - a Stop Loss, a Take Profit, or a close from another device.
+
+    "Trading Is Disabled On <symbol> Right Now"
+        The market for that instrument is closed, or the broker has put it
+        into close only or disabled mode. Wait for the session to open.
+
+    "Close Failed: <number>  <description>"
+        The broker rejected the request and returned its own reason code. The
+        most common are requote, market closed, and not enough money. The
+        number is the broker's standard MetaTrader 5 return code, so support
+        can look it up precisely. Send this whole line when you write to us.
+
+  13.7  WHAT IT WILL NEVER DO
+  ---------------------------
+    -  It will never close a position you did not click on.
+    -  It will never close ALL positions at once. There is no "close all"
+       button anywhere in this product, deliberately.
+    -  It will never open a position.
+    -  It will never move a Stop Loss or a Take Profit.
+    -  It will never partially close. The whole position is closed.
+
+
+===============================================================================
+  SECTION 14  -  COMPLETE SETTINGS REFERENCE (EVERY INPUT)
+===============================================================================
+
+  Press F7 on the chart to reopen the settings at any time, or right click the
+  chart and choose "Expert list", then "Properties". Changing a setting
+  restarts the dashboard, which resets the current tab and the page positions
+  but changes nothing in your account.
+
+  ---------------------------------------------------------------------------
+  GROUP:  PRODUCT / PUBLISHER
+  ---------------------------------------------------------------------------
+  These fields fill the About tab and the footer. Change them only if you are
+  an authorised partner distributing under your own contact details.
+
+    Developed By ............ "DigiTech.Com.Pk Team"
+    Publisher ............... "Digital Technologies Pakistan"
+    Primary Website ......... "ForexGuru.Pk"
+    Secondary Website ....... "DigiTech.Com.Pk"
+    Contact Phone ........... "+92-300-6561240"
+    Support Email One ....... "support@forexguru.pk"
+    Support Email Two ....... "support@digitech.com.pk"
+    Team Partners ........... "ForexGuru.Pk"
+    Under Supervision Of .... "Dr. Zia-al-Hassan"
+    Supervisor Title ........ "International Forex Trainer & Analyst"
+
+  ---------------------------------------------------------------------------
+  GROUP:  TRADER
+  ---------------------------------------------------------------------------
+    >>> TYPE YOUR FULL NAME HERE <<<
+        Default: "Enter Your Name Here"
+        Your name. Until you replace the placeholder, the header shows a red
+        instruction and the About tab shows "Licensed To: Not Set" in red.
+        Leading and trailing spaces are removed automatically.
+
+    Money Prefix
+        Default: "$"
+        The symbol placed in front of every money figure. Leave it BLANK and
+        the dashboard uses the real account currency code instead - "PKR ",
+        "USD ", "EUR " and so on. Setting this to a blank is the honest choice
+        for a non dollar account.
+
+  ---------------------------------------------------------------------------
+  GROUP:  APPEARANCE
+  ---------------------------------------------------------------------------
+    Theme
+        Default: Dark (Luxury Gold). The other choice is Light (Print /
+        Screenshot). This sets the STARTING theme; the toolbar switch changes
+        it while running.
+
+    Auto Scale Fonts To Chart Size
+        Default: true. Text grows and shrinks with the chart window, measured
+        against a reference size of 1280 x 760 pixels. The scale is limited to
+        the range 0.92 to 1.75 so that text never becomes tiny or absurd.
+
+    Master Font Size %
+        Default: 115. Range 80 to 200; values outside are clamped. This is
+        applied on top of the automatic scaling. No text is ever drawn below
+        12 pixels, whatever the combination of settings - readability is
+        protected by a hard floor. If a panel looks cramped, LOWER this value
+        to fit more rows; if the screen is far away in a classroom, raise it.
+
+    Font Name
+        Default: "Segoe UI". Use "Arial" if Segoe UI is missing.
+
+    Rounded Panel Corners ......... Default: true.
+    Soft Panel Shadow ............. Default: true.
+    Striped Table Rows ............ Default: true. Alternating row shading.
+
+    Force Chart Background To Theme
+        Default: true. Repaints the chart background to match the theme, so
+        that nothing of the old chart shows through at the edges.
+
+    Hide Price / Time Scale And One-Click
+        Default: true. Hides the price scale, the time scale, the one click
+        trading panel and the OHLC line, to give the dashboard a clean full
+        screen.
+
+        BOTH of these chart settings are SAVED when the dashboard starts and
+        RESTORED when you remove it. Your chart returns exactly as it was.
+
+  ---------------------------------------------------------------------------
+  GROUP:  CUSTOM COLOURS (OVERRIDE THEME)
+  ---------------------------------------------------------------------------
+    Use Custom Colours Below
+        Default: false. When this is false, the nine colour settings below are
+        ignored entirely and the theme decides everything.
+
+        When you set it to TRUE, your nine colours replace the theme, and the
+        theme switch in the toolbar no longer changes the appearance. Use this
+        only if you must match a corporate colour scheme.
+
+    Background Colour .............. Default: RGB 13, 17, 23
+    Panel Background ............... Default: RGB 22, 27, 34
+    Header / Title Bar Background .. Default: RGB 31, 38, 48
+    Border Colour .................. Default: RGB 55, 63, 73
+    Text Colour Primary (Gold) ..... Default: RGB 216, 180, 68
+    Text Colour Main ............... Default: RGB 234, 240, 246
+    Text Colour Secondary .......... Default: RGB 168, 178, 190
+    Profit Colour .................. Default: RGB 70, 192, 92
+    Loss Colour .................... Default: RGB 243, 96, 86
+
+  ---------------------------------------------------------------------------
+  GROUP:  START-UP VIEW
+  ---------------------------------------------------------------------------
+    Opening Tab
+        Default: Overview. Choose Overview, Statistics, Analytics, History or
+        About.
+
+    Account Summary Expanded ....... Default: true
+    Growth Chart Expanded .......... Default: true
+    Open Trades Expanded ........... Default: true
+    Trade Statistics Expanded ...... Default: true
+    Monthly Gain Expanded .......... Default: true
+    Currency Popularity Expanded ... Default: true
+
+        These six control the STARTING state of those six panels only. Every
+        other panel always starts expanded. All of them can be collapsed by
+        clicking their title at any time.
+
+    Show Top KPI Ribbon
+        Default: true. Set to false to remove the seven card ribbon and give
+        the panels more height. The ribbon is hidden on the About tab
+        regardless of this setting.
+
+  ---------------------------------------------------------------------------
+  GROUP:  LAYOUT
+  ---------------------------------------------------------------------------
+    Cover Whole Chart
+        Default: true. The dashboard fills the entire chart window and follows
+        it when you resize.
+
+        Set it to false and the four settings below take effect, placing the
+        dashboard as a fixed rectangle. In that mode part of the price chart
+        remains visible around it.
+
+    Panel X ....... Default: 5     (pixels from the left edge)
+    Panel Y ....... Default: 20    (pixels from the top edge)
+    Panel Width ... Default: 1280
+    Panel Height .. Default: 800
+
+  ---------------------------------------------------------------------------
+  GROUP:  TRADE CONTROL
+  ---------------------------------------------------------------------------
+    Show One Click Close Button On Open Trades .... Default: true
+    Confirm Window Seconds (Click X Twice) ........ Default: 6  (clamped 2-60)
+    Maximum Slippage In Points .................... Default: 30
+
+    All three are explained in Section 13.
+
+  ---------------------------------------------------------------------------
+  GROUP:  DATA
+  ---------------------------------------------------------------------------
+    History Days
+        Default: 0, meaning the entire available history.
+
+        Set it to 30, 90, 180 or 365 to study only a recent period. EVERY
+        figure in the dashboard then describes that window only - the growth
+        chart, the drawdown, the statistics, the streaks, all of it.
+
+        This is an excellent teaching tool. Show a student their whole
+        history, then set 90 and show them the last quarter. Traders who are
+        improving and traders who are drifting look completely different when
+        you compare the two views.
+
+    History Recalculation Interval (Sec)
+        Default: 5. How often the full history is rebuilt from the terminal.
+        Raise it to 10 or 15 on a very old account with tens of thousands of
+        deals if you notice the terminal working hard. The screen still
+        redraws every second regardless; only the heavy recalculation is
+        controlled here.
+
+        A trade of your own always forces an immediate rebuild on the next
+        timer beat, whatever this setting says.
+
+    Risk Free Rate % Per Year (For Sharpe)
+        Default: 0.0. The annual risk free rate used in the Sharpe and Sortino
+        formulas. Leaving it at zero is normal and is what most retail
+        statistics sites do. If you want an academically strict figure, enter
+        the current annual treasury bill rate of the account's own currency.
+        Raising this number LOWERS Sharpe and Sortino.
+
+
+===============================================================================
+  SECTION 15  -  GLOSSARY: THE MEANING AND THE FORMULA OF EVERY NUMBER
+===============================================================================
+
+  This section is written so that it can be handed to a student on its own.
+  Each entry gives the plain meaning first and the exact formula second.
+
+  ---------------------------------------------------------------------------
+  ABSOLUTE GAIN  (Abs. Gain)
+  ---------------------------------------------------------------------------
+  Plain meaning : How much trading has added, measured against the money you
+                  actually put in.
+  Formula ....... Net closed profit  /  total deposits  x  100
+
+  ---------------------------------------------------------------------------
+  GAIN  (Time Weighted)
+  ---------------------------------------------------------------------------
+  Plain meaning : Growth from TRADING only, with deposits and withdrawals
+                  removed from the picture.
+  How it works .. The history is cut into segments at every deposit and every
+                  withdrawal. The growth factor of each segment is calculated
+                  separately, and the segments are then multiplied together.
+                  A deposit therefore starts a new segment instead of
+                  registering as a gain.
+  Why it matters  Without this, any account can show enormous "growth" simply
+                  by receiving more money. This figure cannot be faked that
+                  way. It is the same method used by professional fund
+                  reporting.
+
+  ---------------------------------------------------------------------------
+  DAILY %  and  MONTHLY %
+  ---------------------------------------------------------------------------
+  Plain meaning : The steady compounded rate that would have produced the same
+                  overall growth over the same period.
+  Formula ....... days = calendar days from the first record to the last
+                  Daily   = ( growth factor ^ (1 / days)  - 1 ) x 100
+                  Monthly = ( growth factor ^ (30 / days) - 1 ) x 100
+  Warning ....... These are averages spread over the whole history. They are
+                  NOT a forecast and NOT the return of today or this month.
+                  A student who multiplies the monthly figure by twelve to
+                  "plan" a year has misunderstood it.
+
+  ---------------------------------------------------------------------------
+  MAXIMUM DRAWDOWN
+  ---------------------------------------------------------------------------
+  Plain meaning : The deepest fall the account has ever taken from its own
+                  highest point.
+  Formula ....... At every point: ( peak balance - current balance ) / peak
+                  balance x 100. The maximum value ever reached is kept, in
+                  both percent and money.
+  Note .......... This is a BALANCE drawdown, computed from closed deals. It
+                  does not include floating loss on positions that were still
+                  open. See Section 16.
+
+  ---------------------------------------------------------------------------
+  WIN RATE
+  ---------------------------------------------------------------------------
+  Plain meaning : The share of closed trades that did not lose money.
+  Formula ....... winning trades / total closed trades x 100
+  Note .......... A trade that closed at exactly zero is counted as a WIN, not
+                  as a loss. This is a deliberate convention. On accounts with
+                  many breakeven exits it makes the win rate slightly kinder
+                  than a strict "profit greater than zero" definition would.
+
+  ---------------------------------------------------------------------------
+  PROFIT FACTOR
+  ---------------------------------------------------------------------------
+  Plain meaning : How many rupees the account earned for every rupee it lost.
+  Formula ....... gross profit of all winners / absolute gross loss of all
+                  losers
+  Reading it .... Below 1.00 the account is losing. 1.00 is breakeven. Above
+                  about 1.30 is respectable for a retail account. Above 3.00
+                  on a small sample usually means the sample is too small, not
+                  that the strategy is exceptional.
+
+  ---------------------------------------------------------------------------
+  EXPECTANCY
+  ---------------------------------------------------------------------------
+  Plain meaning : What one average trade is worth, in money.
+  Formula ....... net profit / number of closed trades
+  Reading it .... Multiply it by your expected number of trades per month to
+                  get an honest, arithmetic expectation. If expectancy is
+                  negative, no amount of trading more often can help.
+
+  ---------------------------------------------------------------------------
+  REWARD : RISK  (per symbol / per strategy)
+  ---------------------------------------------------------------------------
+  Plain meaning : When this instrument pays, how much bigger is the payment
+                  than the average loss it takes?
+  Formula ....... ( gross win / number of winners )  divided by
+                  ( absolute gross loss / number of losers )
+  Note .......... Historical, not planned. If there are no losers yet, the
+                  ratio does not exist and the panel says "No Loss".
+
+  ---------------------------------------------------------------------------
+  SHARPE RATIO (Annualised)
+  ---------------------------------------------------------------------------
+  Plain meaning : Return per unit of variability. It asks whether the profit
+                  arrived smoothly or through wild swings.
+  How it works .. A daily return series is built. Each day's return is that
+                  day's net trading result divided by the account balance at
+                  the start of the day. From that series:
+
+                    Sharpe = ( average daily return - daily risk free rate )
+                             / standard deviation of daily returns
+                             x  square root of 252
+
+                  252 is the standard number of trading days in a year, used
+                  to turn a daily figure into an annual one. The daily risk
+                  free rate is your Risk Free Rate % setting divided by 100
+                  and then by 252.
+
+  Reading it .... Below 1 is weak. 1 to 2 is good. Above 2 is very good, and
+                  should make you check the sample size before celebrating.
+
+  ---------------------------------------------------------------------------
+  SORTINO RATIO (Annualised)
+  ---------------------------------------------------------------------------
+  Plain meaning : The same idea as Sharpe, but it only punishes DOWNSIDE
+                  variability. Sharpe treats a violently profitable day as
+                  "risk"; Sortino does not.
+  How it works .. Identical to Sharpe, except that the divisor is built from
+                  negative days only.
+  Reading it .... Sortino is normally higher than Sharpe. If Sortino is much
+                  higher, the account's variability is mostly on the winning
+                  side, which is a good sign.
+
+  ---------------------------------------------------------------------------
+  Z-SCORE
+  ---------------------------------------------------------------------------
+  Plain meaning : Do wins and losses come in streaks, or are they random?
+  How it works .. The classic runs test. A "run" is an unbroken sequence of
+                  wins or of losses. The test compares how many runs actually
+                  occurred against how many would be expected by pure chance.
+
+                    N = number of trades
+                    W = number of wins,  L = number of losses,  R = runs
+                    P = 2 x W x L
+                    Z = ( N x (R - 0.5) - P ) / square root of
+                        ( P x (P - N) / (N - 1) )
+
+  Reading it .... Roughly, a value beyond +1.96 or -1.96 is statistically
+                  meaningful at the usual 95% confidence level.
+                  NEGATIVE means streaks: wins follow wins and losses follow
+                  losses more often than chance. A trend following account
+                  often looks like this.
+                  POSITIVE means alternation: wins and losses take turns more
+                  often than chance.
+                  Near zero means the results look random, which is the normal
+                  and expected result for most accounts.
+
+  ---------------------------------------------------------------------------
+  RECOVERY FACTOR
+  ---------------------------------------------------------------------------
+  Plain meaning : How much profit the account produced for each unit of pain
+                  it went through at its worst moment.
+  Formula ....... net profit / maximum drawdown in money
+  Reading it .... Below 1 means the account has not yet earned back more than
+                  its own worst fall. Above 3 is strong.
+
+  ---------------------------------------------------------------------------
+  ACTIVE DAYS
+  ---------------------------------------------------------------------------
+  Plain meaning : The number of days on which the account produced a non zero
+                  trading result.
+
+  ---------------------------------------------------------------------------
+  PIPS
+  ---------------------------------------------------------------------------
+  Plain meaning : The standard unit of price movement for a currency pair.
+  How it works .. On a 5 digit or 3 digit quote, one pip is ten points. On any
+                  other quote, one pip is one point.
+  Direction ..... For a SELL the sign is inverted, so a profitable sell shows
+                  POSITIVE pips.
+  Restriction ... Pips are calculated ONLY for instruments the broker
+                  classifies as Forex. Everything else is excluded from every
+                  pip total. See Section 16.
+
+  ---------------------------------------------------------------------------
+  MONTHLY GAIN
+  ---------------------------------------------------------------------------
+  Plain meaning : What that month added, relative to the size of the account
+                  at the start of that month.
+  Formula ....... month profit / balance at start of month x 100
+
+  ---------------------------------------------------------------------------
+  MAXIMUM CONSECUTIVE LOSSES
+  ---------------------------------------------------------------------------
+  Plain meaning : The longest unbroken run of losing trades in the whole
+                  history.
+  Why it matters  This, and not the win rate, is the number that decides how
+                  big a position you can safely take. If your history contains
+                  a run of nine losses, your position size must survive ten.
+
+  ---------------------------------------------------------------------------
+  SHORT MONEY NOTATION
+  ---------------------------------------------------------------------------
+  Where space is tight - KPI card notes, chart axes, the NET column - money is
+  abbreviated:
+
+    $1,250      appears as    $1.3K     (thousands, one decimal)
+    $2,400,000  appears as    $2.40M    (millions, two decimals)
+
+  Full precision is always available in the tables on the History tab.
+
+  ---------------------------------------------------------------------------
+  DURATION NOTATION
+  ---------------------------------------------------------------------------
+    "2d 4h"   two days and four hours
+    "6h 30m"  six hours and thirty minutes
+    "45m"     forty five minutes
+    "-"       no measurable duration
+
+
+===============================================================================
+  SECTION 16  -  HONEST LIMITS AND KNOWN BEHAVIOUR  (PLEASE READ)
+===============================================================================
+
+  Every analytics product has boundaries. Hiding them is how students end up
+  drawing wrong conclusions from right numbers. These are ours, stated
+  plainly.
+
+  16.1  IT IS AN EXPERT ADVISOR, NOT AN INDICATOR
+  -----------------------------------------------
+  Earlier versions of Taurus Vision were custom indicators. MetaTrader 5 does
+  not allow a custom indicator to call any trade function - an indicator that
+  tries fails at runtime. Because Version 9.00 closes positions, it HAD to
+  become an Expert Advisor.
+
+  Two practical consequences:
+
+    -  It lives in MQL5\Experts, not MQL5\Indicators.
+    -  MetaTrader 5 permits only ONE Expert Advisor per chart. If you run a
+       trading robot, give the dashboard its own chart.
+
+  16.2  PIPS ARE CALCULATED FOR FOREX PAIRS ONLY
+  ----------------------------------------------
+  The word "pip" has an agreed meaning on a currency pair and no agreed
+  meaning anywhere else. On a two digit crypto quote, a 46 dollar move becomes
+  "4,674 pips", which is a meaningless number that would then pollute every
+  pip average on the screen.
+
+  Therefore:
+
+    -  Only instruments the broker classifies as Forex contribute to Pips
+       (FX), Average Win pips, Average Loss pips, Best (Pips) and Worst
+       (Pips).
+    -  Everything else - gold, silver, indices, crypto, CFDs on shares - is
+       excluded from those figures.
+    -  The Trade Statistics title bar tells you exactly how many trades were
+       excluded, for example "17 Non-FX (Excluded From Pips)".
+    -  In the trade tables the PIPS column still shows something useful for
+       those instruments: the raw price movement, to two decimals.
+    -  If the account has never traded a Forex pair, the pip fields show
+       "n/a" rather than a misleading zero.
+
+  16.3  SHARPE AND SORTINO ARE SLIGHTLY OPTIMISTIC
+  ------------------------------------------------
+  Both ratios are built from a series of daily returns, and that series only
+  contains days on which the account actually had activity. Days with no
+  trading at all are not in the series.
+
+  Excluding flat days removes a set of zero returns that would otherwise pull
+  the average down and change the standard deviation. The practical effect is
+  that these two figures are somewhat HIGHER here than a strict calendar based
+  Sharpe would be.
+
+  This does not make them useless - comparing one period of your own account
+  against another period of the same account is perfectly valid. But do not
+  place our Sharpe beside a fund's published Sharpe and treat them as equals.
+
+  16.4  DRAWDOWN IS BALANCE BASED
+  -------------------------------
+  The drawdown figures are computed from the closed deal history, so they
+  measure the fall of the BALANCE. Floating loss on positions that were still
+  open at the time is not included.
+
+  An account that holds a very large losing position for weeks without closing
+  it will therefore show a smaller drawdown here than its equity curve
+  actually suffered.
+
+  This is not an oversight, it is a limit of the data. MetaTrader 5 does not
+  store a historical record of equity or of floating profit. Only a program
+  that was RUNNING at the time, recording every tick, could reconstruct it.
+  Nothing can recover it afterwards.
+
+  16.5  THE HOUR CHART IS IN SERVER TIME
+  --------------------------------------
+  The Net P/L By Hour Of Day panel uses broker server hours, and says so in
+  its own title bar. Check your broker's server offset before concluding
+  anything about sessions.
+
+  16.6  EVERYTHING DEPENDS ON DOWNLOADED HISTORY
+  ----------------------------------------------
+  The dashboard can only see the deals your terminal has actually received. A
+  freshly installed terminal, or a terminal that has been asked to show only
+  the last month, will show a shorter history. Set the Toolbox History tab to
+  "All History" for the complete picture.
+
+  16.7  BREAKEVEN TRADES COUNT AS WINS
+  ------------------------------------
+  A trade closing at exactly zero is counted as a winner. Section 15 explains
+  this.
+
+  16.8  THE PROFIT COLUMN AND THE TOTAL LINE DIFFER BY SWAP
+  ---------------------------------------------------------
+  In the Current Active Trades panel, the PROFIT column of each row shows the
+  market result without swap, because swap has its own column. The TOTAL line
+  at the bottom includes swap. The difference between them is exactly the sum
+  of the SWAP column.
+
+  16.9  WHAT THE PRODUCT CANNOT SHOW, AND WHY
+  -------------------------------------------
+  Two features that traders often ask for are simply not reconstructable from
+  MetaTrader 5 deal history, no matter how the software is written:
+
+    -  MAE and MFE excursion charts, which show how far a trade went against
+       you and in your favour BEFORE it closed. These require tick by tick
+       logging while the trade is open. History does not store it.
+
+    -  A true historical EQUITY curve including floating profit. As explained
+       in 16.4, MetaTrader 5 does not keep it.
+
+  Any product claiming to produce these from history alone on an account it
+  was not running on is estimating, not reporting.
+
+  16.10  SETTINGS ARE NOT SAVED BETWEEN RESTARTS
+  ----------------------------------------------
+  The tab you are on, the pages you have scrolled to, the panels you have
+  collapsed and the theme you have chosen live only while the dashboard runs.
+  Restart it and it returns to the state described by your input settings.
+
+  If you want a particular startup layout permanently, set it in the START-UP
+  VIEW group and save the whole thing as a chart template.
+
+
+===============================================================================
+  SECTION 17  -  TROUBLESHOOTING
+===============================================================================
+
+  PROBLEM  Nothing appears after I drag it onto the chart.
+  CHECK    Look at the top right corner of the chart. A small sad face means
+           the Expert Advisor is loaded but not permitted; a smiling face
+           means it is running. If there is no face at all, the Expert Advisor
+           did not attach - repeat Step 5 of Section 4. Also check the Experts
+           tab in the Toolbox for a message.
+
+  PROBLEM  The screen says "Chart Window Too Small".
+  CHECK    Maximise the chart window inside the terminal. If it is already
+           maximised, lower "Master Font Size %" from 115 to 95 or 85.
+
+  PROBLEM  The header shows the product name and a red warning line.
+  CHECK    Your name has not been set. Press F7, Inputs tab, first field.
+
+  PROBLEM  The close buttons do nothing.
+  CHECK    In order:
+             1. Is the AutoTrading button on the toolbar green?
+             2. Press F7, Common tab - is "Allow Algo Trading" ticked?
+             3. Read the status line at the foot of the Current Active Trades
+                panel. It names the exact problem. Section 13.6 lists every
+                message.
+
+  PROBLEM  There are no close buttons at all.
+  CHECK    "Show One Click Close Button On Open Trades" is set to false, or
+           there are no open positions.
+
+  PROBLEM  The Growth panel says "Not Enough History Data".
+  CHECK    The terminal has fewer than two records. Open Toolbox (Ctrl+T),
+           History tab, right click, "All History". On a brand new account
+           this message is simply correct.
+
+  PROBLEM  Pips show "n/a", or the totals look too small.
+  CHECK    Read Section 16.2. If this account trades only gold, indices or
+           crypto, "n/a" is the correct and honest answer.
+
+  PROBLEM  A pager arrow is missing.
+  CHECK    The "<" arrow is dropped when the panel is too narrow to hold it.
+           The ">" arrow wraps around from the last page to the first, so
+           every page is still reachable. Widen the chart, or lower the font
+           size, to bring the back arrow back.
+
+  PROBLEM  Clicking sometimes seems to be ignored.
+  CHECK    Two clicks on the same control within 300 milliseconds count as
+           one. Slow down slightly between clicks.
+
+  PROBLEM  The terminal feels slow on a very old account.
+  CHECK    Raise "History Recalculation Interval (Sec)" from 5 to 15, or set
+           "History Days" to 365 so that only the last year is studied.
+
+  PROBLEM  My chart looks wrong after I remove the dashboard.
+  CHECK    It should not. The background colour, price scale, time scale, one
+           click panel and OHLC line are all saved on startup and restored on
+           removal. If something remains changed, press F8 and reset the chart
+           properties manually.
+
+  PROBLEM  The numbers do not match my broker's statement exactly.
+  CHECK    Some brokers report commission on a separate line, or apply it at a
+           different moment. This dashboard includes commission and swap
+           inside the net result of each trade. Compare a single trade in the
+           Closed Trade History against the same trade in the terminal's own
+           History tab; they will agree.
+
+
+===============================================================================
+  SECTION 18  -  FREQUENTLY ASKED QUESTIONS
+===============================================================================
+
+  Q.  Which chart and which timeframe should I use?
+  A.  Any. The dashboard analyses the ACCOUNT, not the chart. Most traders
+      keep one dedicated chart for it.
+
+  Q.  Can I run it on more than one chart at the same time?
+  A.  Yes, but there is no reason to. Every copy would show the same account.
+      It also costs processing power for nothing.
+
+  Q.  Can I run it alongside my trading robot?
+  A.  Yes, but on a DIFFERENT chart. MetaTrader 5 allows only one Expert
+      Advisor per chart.
+
+  Q.  Is it safe on a live account?
+  A.  It reads your history and it never opens or modifies a trade. The only
+      action it can take is closing a position you clicked and then confirmed.
+      For extra safety on a classroom or demonstration terminal, set "Show One
+      Click Close Button On Open Trades" to false; the product then becomes
+      strictly read only.
+
+  Q.  Does it send my data anywhere?
+  A.  No. It makes no internet connection of any kind.
+
+  Q.  Does it need an internet licence or activation?
+  A.  No.
+
+  Q.  Does it work on a cent account or on a PKR account?
+  A.  Yes. Set "Money Prefix" to blank and the real account currency code is
+      used in front of every figure instead of a dollar sign.
+
+  Q.  Does it work on a netting account?
+  A.  Yes. Positions are reconstructed from deals using the position
+      identifier, which works under both hedging and netting.
+
+  Q.  Why does a partially closed position show one average price?
+  A.  Because that is the honest summary. When a position was entered or
+      exited in several parts, the IN and OUT prices are the volume weighted
+      averages of those parts.
+
+  Q.  Why is my win rate high but my profit negative?
+  A.  Because win rate says nothing about SIZE. Look at Average Win against
+      Average Loss, and at Profit Factor. This is the single most common
+      pattern among losing retail accounts.
+
+  Q.  Can I change the colours to my own brand?
+  A.  Yes. Set "Use Custom Colours Below" to true and set the nine colours.
+      Note that the theme switch stops changing the appearance while custom
+      colours are active.
+
+  Q.  Can I remove the "Powered By ForexGuru.Pk" footer?
+  A.  No. It is part of the product identity.
+
+  Q.  Can I give this to my friend?
+  A.  Please ask your instructor. Distribution terms are set by the publisher,
+      not by this help file.
+
+  Q.  Will there be more Taurus products?
+  A.  Taurus Vision is one member of a planned family. Ask ForexGuru.Pk for
+      the current list.
+
+
+===============================================================================
+  SECTION 19  -  NOTES FOR TEACHERS AND STUDY GROUPS
+===============================================================================
+
+  This section is written for the instructor. You may remove it before giving
+  the file to students, or leave it in - it does no harm.
+
+  19.1  A THIRTY MINUTE CLASSROOM SEQUENCE
+  ----------------------------------------
+  A sequence that works well with a live or demo account on a projector:
+
+    1.  Switch to the LIGHT theme first. Dark gold on a projector washes out.
+    2.  Overview tab. Set Account Growth to GROWTH % and point at the two
+        lines. Ask the class which one is real growth and why the grey line
+        can rise while the gold line stays flat.
+    3.  Switch the same panel to DRAWDOWN. Ask how many WEEKS the account
+        spent under water, not how deep it went. Depth frightens students;
+        duration teaches them.
+    4.  Statistics tab. Cover the Profit Factor with your hand and ask the
+        class to predict it from the win rate alone. Then reveal it. This
+        breaks the win rate obsession faster than any lecture.
+    5.  Analytics tab. Average Holding Time. Ask why the green bar and the red
+        bar differ. Let them find the "cutting winners, holding losers" bias
+        themselves.
+    6.  History tab. Risk Metrics & Records. Point at Max Cons. Losses and ask
+        each student to calculate what their own risk per trade would have
+        done through that run.
+
+  19.2  MAKING GOOD SCREENSHOTS FOR STUDENTS
+  ------------------------------------------
+    -  Switch to the LIGHT theme. It prints and projects far better.
+    -  Collapse every panel except the one you want to teach. That single
+        panel then expands to fill the screen.
+    -  Raise "Master Font Size %" to 140 or 150 for a projector.
+    -  The footer already carries the trader name, currency and account
+        number, so the picture identifies itself.
+
+  19.3  A PRIVACY WARNING BEFORE YOU PUBLISH
+  ------------------------------------------
+  The header shows the broker name and the ACCOUNT LOGIN NUMBER, and the
+  footer repeats the account number. Before you post a screenshot publicly or
+  send it into a student group, cover both. Use a demo account for public
+  material.
+
+  19.4  A HOMEWORK EXERCISE THAT WORKS
+  ------------------------------------
+  Ask each student to send you three screenshots of their own account:
+
+    1.  Statistics tab with History Days set to 0.
+    2.  Statistics tab with History Days set to 90.
+    3.  Analytics tab with History Days set to 90.
+
+  Then ask them one question: "In the last ninety days, did you get better or
+  did you get luckier?" The Profit Factor, the Expectancy and the Reward:Risk
+  panel between them will answer it, and the student will have done the work.
+
+
+===============================================================================
+  SECTION 20  -  SUPPORT AND CONTACT
+===============================================================================
+
+  Email ..... support@forexguru.pk
+              support@digitech.com.pk
+  Phone ..... +92-300-6561240
+  Websites .. ForexGuru.Pk  |  DigiTech.Com.Pk
+
+  WHEN YOU WRITE TO SUPPORT, PLEASE INCLUDE:
+
+    1.  Your MetaTrader 5 ACCOUNT NUMBER and your BROKER name.
+    2.  The VERSION, exactly as it appears on the About tab. For this file
+        that is Version 9.00.
+    3.  A SCREENSHOT of the whole chart, showing the problem.
+    4.  If a close attempt failed, the EXACT status line, including the
+        number. For example: "Close Failed: 10018  Market is closed".
+    5.  If the dashboard did not start, the contents of the Experts tab in
+        the terminal Toolbox.
+
+  Support cannot help with trading decisions, strategy selection, or broker
+  disputes. Support exists for the software.
+
+
+===============================================================================
+  SECTION 21  -  LEGAL NOTICE AND RISK DISCLAIMER
+===============================================================================
+
+  This dashboard reads your own account history. It never opens or modifies a
+  trade. A position closes only after you confirm it twice on screen.
+
+  PAST RESULTS DO NOT GUARANTEE FUTURE RESULTS.
+
+  Every figure in this product describes something that has already happened.
+  Nothing in it is a prediction, a recommendation, an invitation, or financial
+  advice of any kind. Trading foreign exchange and contracts for difference
+  carries a high level of risk and can result in the loss of all of your
+  capital. Do not trade with money you cannot afford to lose. If you are
+  unsure, seek advice from an independent and appropriately licensed adviser.
+
+  The publisher accepts no liability for any trading loss, missed opportunity,
+  data error, or platform failure connected with the use of this software. The
+  software is provided as it is.
+
+  Traders are responsible for complying with the laws and regulations that
+  apply to them in their own country.
+
+  (c) 2026 Digital Technologies Pakistan. All rights reserved.
+  ForexGuru.Pk Taurus Vision Trader Dashboard, the Taurus Vision brand mark,
+  and the Taurus product family names are the property of the publisher. This
+  software may not be resold, rebranded, decompiled or redistributed without
+  written permission from the publisher.
+
+
+===============================================================================
+  SECTION 22  -  WHAT IS NEW IN VERSION 9.00
+===============================================================================
+
+  As stated in the header of the source file itself, Version 9.00 brings:
+
+    -  ONE CLICK TRADE CLOSING on the Current Active Trades panel, with a
+       deliberate two step confirmation and a configurable confirm window.
+       This is the change that required the product to become an Expert
+       Advisor rather than a custom indicator.
+
+    -  A WORKING SUN / MOON THEME SWITCH. The glyphs are drawn with shapes
+       rather than font characters, so they cannot fail on a machine that is
+       missing a symbol font.
+
+    -  ONE SHARED PAGER across every long table. Six tables that previously
+       used three different, separately written paging mechanisms now use a
+       single control with identical behaviour everywhere.
+
+  Version 9.00 also ships as a SINGLE FILE. There is no external logo bitmap
+  and nothing has to be copied into the MQL5\Files folder.
+
+  Other behaviour worth knowing about in this build:
+
+    -  The Reward : Risk panel now separates the three possible states and
+       labels each one, instead of printing a dash for a symbol that has
+       simply never taken a loss.
+
+    -  Trade notifications from the terminal no longer trigger a full history
+       rebuild inside the trade pipeline. They raise a flag, and the rebuild
+       happens on the next timer beat. This removes the momentary freeze that
+       occurred whenever an order was placed.
+
+    -  Only one chart click event is handled, which fixes actions firing twice
+       from a single click.
+
+    -  A confirm window of zero is no longer accepted; the value is forced
+       into the range 2 to 60 seconds so that the safety guard cannot be
+       switched off by accident.
+
+
+===============================================================================
+
+                            E N D   O F   H E L P   F I L E
+
+              ForexGuru.Pk Taurus Vision Trader Dashboard
+                   Version 9.00  -  Standard Edition
+                            August 2026
+
+           Developed By DigiTech.Com.Pk Team, Under Supervision Of
+        Dr. Zia-al-Hassan, International Forex Trainer & Analyst
+
+              support@forexguru.pk  |  support@digitech.com.pk
+                          +92-300-6561240
+                  ForexGuru.Pk  |  DigiTech.Com.Pk
+
+                        Powered By ForexGuru.Pk
+
+===============================================================================
